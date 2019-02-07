@@ -2,8 +2,7 @@
   "name": "hermes",
   "version": "1.0.0",
   "description": "VVK PIT15-I bakalaurinio projektas",
-  "scripts": {
-  },
+  "scripts": {},
   "author": "Juozas Venskutonis",
   "license": "MIT",
   "dependencies": {
