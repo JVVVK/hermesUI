@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "VVK PIT15-I bakalaurinio projektas",
   "scripts": {
-    "prestart": "node buildScripts/startMessage.js",
-    "start": "node buildScripts/srcServer.js",
+    "prestart": "babel-node buildScripts/startMessage.js",
+    "start": "babel-node buildScripts/srcServer.js",
     "hermes": "lt --port 3000 --subdomain hermes"
   },
   "author": "Juozas Venskutonis",
