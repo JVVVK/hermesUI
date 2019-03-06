@@ -7,7 +7,7 @@
     "open:src": "babel-node buildScripts/srcServer.js",
     "web": "lt --port 3000 --subdomain hermes",
     "audit": "npm audit --audit-level high",
-    "lint": "esw webpack.config.js src buildscripts --color",
+    "lint": "esw webpack.config* src buildscripts --color",
     "lint:watch": "npm run lint -- --watch",
     "start": "npm-run-all --parallel open:src lint:watch"
   },
