@@ -9,7 +9,9 @@
     "audit": "npm audit --audit-level high",
     "lint": "esw webpack.config* src buildscripts --color",
     "lint:watch": "npm run lint -- --watch",
-    "start": "npm-run-all --parallel open:src lint:watch"
+    "start": "npm-run-all --parallel open:src lint:watch test:watch",
+    "test": "mocha --reporter progress buildScripts/testSetup.js \"src/**/*.test.js\"",
+    "test:watch": "npm run test -- --watch"
   },
   "author": "Juozas Venskutonis",
   "license": "free",
