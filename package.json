@@ -5,7 +5,7 @@
   "scripts": {
     "prestart": "babel-node buildScripts/startMessage.js",
     "open:src": "babel-node buildScripts/srcServer.js",
-    "web": "lt --port 3000 --subdomain hermes",
+    "share": "lt --port 3000 --subdomain hermes",
     "audit": "npm audit --audit-level high",
     "lint": "esw webpack.config* src buildscripts --color",
     "lint:watch": "npm run lint -- --watch",
@@ -14,7 +14,11 @@
     "test:watch": "npm run test -- --watch",
     "generate-mock-data": "babel-node buildScripts/generateMockData",
     "prestart-mockapi": " npm run generate-mock-data",
-    "start-mockapi": "json-server --watch src/api/db.json --port 3001"
+    "start-mockapi": "json-server --watch src/api/db.json --port 3001",
+    "clean-dist": "rimraf ./dist && mkdir dist",
+    "prebuild": "npm-run-all clean-dist test lint",
+    "build": "babel-node buildScripts/build.js",
+    "postbuild": "babel-node buildScripts/distServer.js"
   },
   "author": "Juozas Venskutonis",
   "license": "free",
@@ -22,6 +26,7 @@
     "whatwg-fetch": "3.0.0"
   },
   "devDependencies": {
+    "@sentry/browser": "^4.6.4",
     "babel-cli": "6.16.0",
     "babel-core": "6.17.0",
     "babel-loader": "6.2.5",
