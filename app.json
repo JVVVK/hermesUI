@@ -1,6 +1,0 @@
-{
-    "name": "hermes",
-    "description": "VVK PIT15-I bakalaurinio projektas",
-    "repository": "https://github.com/JVVVK/hermes",
-    "keywords": ["node", "express", "static"]
-}
