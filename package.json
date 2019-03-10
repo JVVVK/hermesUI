@@ -1,10 +1,10 @@
 {
-  "name": "hermes",
+  "name": "hermes-ui",
   "version": "1.0.0",
   "description": "VVK PIT15-I bakalaurinio projektas",
   "repository": {
     "type": "git",
-    "url": "https://github.com/JVVVK/hermes"
+    "url": "https://github.com/JVVVK/hermesUI"
   },
   "scripts": {
     "prestart": "babel-node buildScripts/startMessage.js",
