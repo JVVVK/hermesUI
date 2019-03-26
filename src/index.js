@@ -1,6 +1,9 @@
 import './index.css';
 import numeral from "numeral";
 import {getUsers, deleteUser} from './api/userApi.js';
+import * as Sentry from '@sentry/browser';
+
+Sentry.init({ dsn: 'https://07fc76f907ab453390ea6e39d1cf32e8@sentry.io/1414822' });
 
 const appValue = numeral(1000).format('0,0.00');
 //debugger;

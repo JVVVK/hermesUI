@@ -34,6 +34,7 @@ app.get('/', function(req, res) {
     res.sendFile(path.join(__dirname, '../dist/index.html'));
 });
 
+/* Now using heroku
 app.get('/users', function(req, res){
     // Hard coding for simplicity, pretend this hits a real DB
     res.json([
@@ -45,6 +46,7 @@ app.get('/users', function(req, res){
         {"id": 6,"firstName":"Juozas","lastName":"Venskutonis","email":"juozas.venskutonis@vvk.lt"}
     ]);
 });
+*/
 
 app.listen(port, function(err) {
     if (err) {

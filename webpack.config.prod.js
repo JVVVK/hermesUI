@@ -48,7 +48,7 @@ export default {
       inject: true,
       // Properties defined here are available in index.html
       // using htmlWebpackPlugin.options.varName
-      rollbarToken: '82ee9d53057c4c3c9438a97a39e1919a'
+      //rollbarToken: '82ee9d53057c4c3c9438a97a39e1919a'
     }),
 
     // Eliminate duplcate packages when generating bundle
