@@ -77,3 +77,4 @@ typings/
 
 src/api/db.json
 dist/*
+src/geodata/*
