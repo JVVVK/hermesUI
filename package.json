@@ -29,6 +29,7 @@
   "author": "Juozas Venskutonis",
   "license": "free",
   "dependencies": {
+    "node-wget": "^0.4.3",
     "ogr2ogr": "^1.4.0",
     "whatwg-fetch": "3.0.0"
   },

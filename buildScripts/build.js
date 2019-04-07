@@ -4,8 +4,11 @@
 import webpack from 'webpack';
 import webpackConfig from '../webpack.config.prod';
 import chalk from 'chalk';
+import wget from 'node-wget';
 
 process.env.NODE_ENV = 'production';
+
+
 
 console .log(chalk.green('Generating minified bundle for production. This will take a moment...'));
 
@@ -40,3 +43,9 @@ webpack(webpackConfig).run(function(err, stats) {
     return 0;
 });
 
+console .log(chalk.green('Downloading latest shapefile.'));
+
+wget({
+    url: 'https://www.eea.europa.eu/data-and-maps/data/eea-reference-grids-2/gis-files/lithuania-shapefile/at_download/file',
+    dest: './dist/lithuania.zip'
+})
