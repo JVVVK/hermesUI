@@ -17,7 +17,11 @@
   </script>
   <% } %> -->
   <meta charset="utf-8">
-  <title>Hello Juozas!</title>
+  <title>Hermes</title>
+  <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+  <script src="https://browser.sentry-cdn.com/4.6.4/bundle.min.js" crossorigin="anonymous"></script>
+  <script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+  <link href='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
 </head>
 <body>
   <h1>Hello Juozas!</h1>
@@ -34,8 +38,8 @@
 
       </tbody>
     </table>
-  <!-- <script src="bundle.js"></script>
-  <script src="https://browser.sentry-cdn.com/4.6.4/bundle.min.js" crossorigin="anonymous"></script>
+  <script src="bundle.js"></script>
+  <!--
   <script src="https://d3js.org/d3-array.v1.min.js"></script>
   <script src="https://d3js.org/d3-geo.v1.min.js"></script>
   <script>
@@ -44,5 +48,15 @@
     path = d3.geoPath(projection);
 
 </script> -->
+  <div id='map' style='width: 400px; height: 300px;'></div>
+  <script>
+    mapboxgl.accessToken = 'pk.eyJ1IjoianZ2dmsiLCJhIjoiY2p1OG93MmNnMG84eDQzcGw3ajM2MXFnZiJ9.2LQwiHcQvqk1_M_X2rqSNA';
+    var map = new mapboxgl.Map({
+      container: 'map', // container id
+      style: 'mapbox://styles/mapbox/light-v9?optimize=true', //stylesheet location
+      center: [-74.50, 40], // starting position
+      zoom: 9 // starting zoom
+    });
+  </script>
 </body>
 </html>
