@@ -75,6 +75,6 @@ typings/
 # FuseBox cache
 .fusebox/
 
+src/api/db.json
 dist/*
 src/geodata/*
-src/api/db.json
