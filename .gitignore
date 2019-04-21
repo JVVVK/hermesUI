@@ -78,4 +78,3 @@ typings/
 src/api/db.json
 dist/*
 src/geodata/*
-.vscode/ipch/7b06cc8a07cc1575/mmap_address.bin
