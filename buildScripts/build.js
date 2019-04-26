@@ -43,9 +43,9 @@ webpack(webpackConfig).run(function(err, stats) {
     return 0;
 });
 
-console .log(chalk.green('Downloading latest shapefile.'));
+/*console .log(chalk.green('Downloading latest shapefile.'));
 
 wget({
     url: 'https://www.eea.europa.eu/data-and-maps/data/eea-reference-grids-2/gis-files/lithuania-shapefile/at_download/file',
     dest: './dist/lithuania.zip'
-})
+})*/
