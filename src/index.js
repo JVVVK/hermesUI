@@ -1,6 +1,7 @@
 import './index.css';
 import numeral from "numeral";
-import {getUsers, deleteUser} from './api/userApi.js';
+import {getUsers, deleteUser, getData} from './api/userApi.js';
+//import {getData} from './api/userApi.js';
 import * as Sentry from '@sentry/browser';
 
 Sentry.init({ dsn: 'https://07fc76f907ab453390ea6e39d1cf32e8@sentry.io/1414822' });
@@ -10,7 +11,7 @@ const appValue = numeral(1000).format('0,0.00');
 console.log(`I would pay ${appValue} Eur. for this awesome app!`); // eslint-disable-line no-console
 
 //Populate table of users via API call.
-getUsers().then(function(result){
+ getUsers().then(function(result){
     let usersBody = "";
 
     result.forEach(function(user){
@@ -40,3 +41,9 @@ getUsers().then(function(result){
         };
     });
 });
+
+getData().then(function(result){
+    var data = JSON.parse(result);
+});
+
+global.document.getElementById('data').innerHTML = data;

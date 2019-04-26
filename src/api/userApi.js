@@ -11,6 +11,10 @@ export function deleteUser(id) {
     return del(`users/${id}`);
 }
 
+export function getData(){
+    return get('data');
+}
+
 function get(url){
     return fetch(baseUrl + url).then(onSuccess, onError);
 }
@@ -26,6 +30,7 @@ function del(url){
 
 function onSuccess(response){
     return response.json();
+    //return response;
 }
 
 function onError(error){

@@ -23,15 +23,16 @@
 
       </tbody>
     </table>
+  <input id="data" type="button" value="clickme"/>
   <script src="bundle.js"></script>
-  <div id='map' style='width: 400px; height: 300px;'></div>
+  <div id='map' style='width: auto; height: 700px;'></div>
   <script>
     mapboxgl.accessToken = 'pk.eyJ1IjoianZ2dmsiLCJhIjoiY2p1OG93MmNnMG84eDQzcGw3ajM2MXFnZiJ9.2LQwiHcQvqk1_M_X2rqSNA';
     var map = new mapboxgl.Map({
       container: 'map', // container id
       style: 'mapbox://styles/mapbox/light-v9?optimize=true', //stylesheet location
-      center: [-74.50, 40], // starting position
-      zoom: 9 // starting zoom
+      center: [23.8948, 55.1736], // starting position
+      zoom: 7 // starting zoom
     });
   </script>
 </body>
