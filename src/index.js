@@ -43,7 +43,7 @@ console.log(`I would pay ${appValue} Eur. for this awesome app!`); // eslint-dis
 });
 
 getData().then(function(result){
-    var data = JSON.parse(result);
+    var data  = JSON.stringify(result);
+    global.document.getElementById('data').innerHTML = data;
 });
 
-global.document.getElementById('data').innerHTML = data;
