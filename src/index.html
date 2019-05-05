@@ -9,8 +9,14 @@
   <link href='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
 </head>
 <body>
-  <h1>Hello Juozas!</h1>
-  <h2>Users</h2>
+  <h1>Objektų vietų parinkimo programa</h1>
+  <br>
+  <button id="button">Paleisti algoritmą</button>
+  <br>
+  <div id="data"></div>
+  <br>
+  <div id='map' style='width: auto; height: 700px;'></div>
+  <!--<h2>Users</h2>
     <table>
       <thead>
         <th>&nbsp;</th>
@@ -20,21 +26,16 @@
         <th>Email</th>
       </thead>
       <tbody id="users">
-
-      </tbody>
-    </table>
-  <input id="button" type="button" value="clickme"/>
-  <div id="data"></div>
-  <script src="bundle.js"></script>
-  <div id='map' style='width: auto; height: 700px;'></div>
-  <script>
-    mapboxgl.accessToken = 'pk.eyJ1IjoianZ2dmsiLCJhIjoiY2p1OG93MmNnMG84eDQzcGw3ajM2MXFnZiJ9.2LQwiHcQvqk1_M_X2rqSNA';
-    var map = new mapboxgl.Map({
-      container: 'map', // container id
-      style: 'mapbox://styles/mapbox/light-v9?optimize=true', //stylesheet location
-      center: [23.8948, 55.1736], // starting position
-      zoom: 7 // starting zoom
-    });
-  </script>
+    </tbody>
+    </table>-->
+    <script>
+        mapboxgl.accessToken = 'pk.eyJ1IjoianZ2dmsiLCJhIjoiY2p1OG93MmNnMG84eDQzcGw3ajM2MXFnZiJ9.2LQwiHcQvqk1_M_X2rqSNA';
+        var map = new mapboxgl.Map({
+          container: 'map', // container id
+          style: 'mapbox://styles/mapbox/light-v9?optimize=true', //stylesheet location
+          center: [23.8948, 55.1736], // starting position
+          zoom: 7 // starting zoom
+        });
+    </script>
 </body>
 </html>

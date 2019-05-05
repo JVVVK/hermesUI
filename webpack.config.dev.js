@@ -2,6 +2,7 @@ import path from 'path';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 
 export default {
+  watch: true,
   debug: true,
   devtool: 'inline-source-map',
   noInfo: false,

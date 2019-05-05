@@ -5,6 +5,7 @@ import WebpackMd5Hash from 'webpack-md5-hash';
 import ExtractTextPlugin from 'extract-text-webpack-plugin';
 
 export default {
+  watch: true,
   debug: true,
   devtool: 'source-map',
   noInfo: false,
