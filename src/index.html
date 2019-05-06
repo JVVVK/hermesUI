@@ -10,11 +10,28 @@
 </head>
 <body>
   <h1>Objektų vietų parinkimo programa</h1>
-  <br>
-  <button id="button">Paleisti algoritmą</button>
-  <br>
+  <form>
+    Vietovių skaičius (<= 10000):
+    <br/><br/>
+    <input type="number" id="viet_sk"/>
+    <br/><br/>
+    Esančių objektų skaičius:
+    <br/><br/>
+    <input type="number" id="e_obj_sk"/>
+    <br/><br/>
+    Kandidatų naujiems objektams skaičius:
+    <br/><br/>
+    <input type="number" id="k_obj_sk"/>
+    <br/><br/>
+    Naujų objektų skaičius:
+    <br/><br/>
+    <input type="number" id="n_obj_sk"/>
+  </form>
+  <br/><br/>
+  <button id="button" onClick="runAPI()">Paleisti algoritmą</button>
+  <br/><br/>
   <div id="data"></div>
-  <br>
+  <br/><br/>
   <div id='map' style='width: auto; height: 700px;'></div>
   <!--<h2>Users</h2>
     <table>
