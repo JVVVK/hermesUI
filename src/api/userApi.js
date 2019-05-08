@@ -20,8 +20,9 @@ export function postData(){
     return post('data');
 }
 
-export function getData(){
-    return get('data');
+export function getData(a,b,c,d){
+     var qstring = 'data?viet_sk='+a+'&e_obj_sk='+b+'&k_obj_sk='+c+'&n_obj_sk='+d;
+    return get(qstring);
 }
 
 function get(url){

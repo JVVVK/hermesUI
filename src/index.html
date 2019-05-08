@@ -13,19 +13,19 @@
   <form>
     Vietovių skaičius (<= 10000):
     <br/><br/>
-    <input type="number" id="viet_sk"/>
+    <input type="number" id="viet_sk" value="100" min="1" max="10000"/>
     <br/><br/>
     Esančių objektų skaičius:
     <br/><br/>
-    <input type="number" id="e_obj_sk"/>
+    <input type="number" id="e_obj_sk" value="10" min="1" max="10000"/>
     <br/><br/>
     Kandidatų naujiems objektams skaičius:
     <br/><br/>
-    <input type="number" id="k_obj_sk"/>
+    <input type="number" id="k_obj_sk" value="20" min="1" max="10000"/>
     <br/><br/>
     Naujų objektų skaičius:
     <br/><br/>
-    <input type="number" id="n_obj_sk"/>
+    <input type="number" id="n_obj_sk" value="5" min="1" max="10000"/>
   </form>
   <br/><br/>
   <button id="button" onClick="runAPI()">Paleisti algoritmą</button>
