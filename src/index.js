@@ -17,6 +17,11 @@ window.runAPI =  function() {
     //getData().then(function(result){
         var data  = JSON.stringify(result);
         global.document.getElementById('data').innerHTML = data;
+        //window.map.remove(result);
+        //var layer = JSON.parse('{"id":"sprendinys","type":"symbol","source":{"type":"geojson","data":{"type":"FeatureCollection","features":[{"type":"Feature","geometry":{"type":"Point","coordinates":[54.683,25.317]},"properties":{"icon":"marker"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[54.9,23.9]},"properties":{"icon":"marker"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[55.717,21.117]},"properties":{"icon":"marker"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[54.95,25.067]},"properties":{"icon":"marker"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[55.733,24.35]},"properties":{"icon":"marker"}}]}},"layout":{"icon-image":"{icon}-15"},"klientai":521258,"laikas":0}');
+        //window.map.addLayer(layer);
+        //global.document.getElementById('mapFrame').reload();
+        window.map.addLayer(result);
     });
 };
 
