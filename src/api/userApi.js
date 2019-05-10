@@ -14,11 +14,11 @@ export function deleteUser(id) {
 
 export function postData(a, b, c, d){
     return post('data', a, b, c, d);
-}*/
+}
 
 export function postData(){
     return post('data');
-}
+}*/
 
 export function getData(a,b,c,d){
      var qstring = 'data?viet_sk='+a+'&e_obj_sk='+b+'&k_obj_sk='+c+'&n_obj_sk='+d;
@@ -29,7 +29,7 @@ function get(url){
     return fetch(baseUrl + url).then(onSuccess, onError);
 }
 
-function post(url){
+/*function post(url){
     var request = new Request(baseUrl + url, {
         method: 'POST',
         headers: {
@@ -47,7 +47,7 @@ function post(url){
         })
     });
     return fetch(request).then(onSuccess, onError);
-}
+}*/
 
 // fuction name "delete" is a reserved word
 /*function del(url){
