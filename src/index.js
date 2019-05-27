@@ -1,7 +1,7 @@
 import './index.css';
 //import numeral from "numeral";
 //import {getUsers, deleteUser, getData} from './api/userApi.js';
-import {getData} from './api/userApi.js';
+import {getData} from './api/useApi.js/index.js';
 //import {postData} from './api/userApi.js';
 import * as Sentry from '@sentry/browser';
 
