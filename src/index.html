@@ -38,21 +38,13 @@
   <br/>
   <button id="button" onClick="runAPI()">Paleisti algoritmą</button>
   <br/><br/>
+  <div id="clients">Klientų skaičius: </div>
+  <br/><br/>
+  <div id="time">Skaičiavimo laikas (sek.): </div>
+  <br/><br/>
   <div id='map' style='width: auto; height: 700px;'></div>
   <br/><br/>
   <div id="data"></div>
-  <!--<h2>Users</h2>
-    <table>
-      <thead>
-        <th>&nbsp;</th>
-        <th>Id</th>
-        <th>First Name</th>
-        <th>Last Name</th>
-        <th>Email</th>
-      </thead>
-      <tbody id="users">
-    </tbody>
-    </table>-->
     <script>
         mapboxgl.accessToken = 'pk.eyJ1IjoianZ2dmsiLCJhIjoiY2p1OG93MmNnMG84eDQzcGw3ajM2MXFnZiJ9.2LQwiHcQvqk1_M_X2rqSNA';
         var map = new mapboxgl.Map({
